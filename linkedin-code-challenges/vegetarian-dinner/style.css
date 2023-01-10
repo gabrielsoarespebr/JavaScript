@@ -1,0 +1,64 @@
+body {
+    background-color: #F3F2EF;
+    font-family: Arial;
+}
+
+main {
+    display: flex;
+}
+
+form {
+    background-color: white;
+    margin: auto;
+    width: 20%;
+    border-radius: 1em;
+    margin-top: 5%;
+    padding: 2%;
+    text-align: center
+}
+
+h1 {
+    color: #0a66c2;
+    text-align: center
+}
+
+h2,
+h3 {
+    text-align: center
+}
+
+
+legend {
+    margin-bottom: 3%;
+    text-align: center;
+    font-weight: bold
+}
+
+main > div {
+    margin: 5% auto;
+    width: 70%;
+    height: 70%
+}
+
+.vegetarianIcon{
+    width: 10px;
+}
+
+#registerButton {
+    background-color: #0a66c2;
+    color: white;
+    margin: 1em auto 0 auto;
+    border: none;
+    padding: 1em;
+    border-radius: 1em;
+    font-weight: bold;
+    cursor: pointer
+}
+
+#registerButton:hover {
+    background-color: #4e94d9;
+}
+
+form>input {
+    margin: .5em 0
+}
