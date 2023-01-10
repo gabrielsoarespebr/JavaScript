@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script type="module" src="./script.js" defer></script>
-    <script type="module" src="./styles.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="script.js" defer></script>
 </head>
 
 <body>
@@ -21,23 +21,23 @@
                 <th>Author</th>
                 <th>ISBN</th>
                 <th>Copies</th>
-                <th>Sell</th>
-                <th>Restock</th>
+                <th><button id="sellButton">Sell</button></th>
+                <th><button id="restockButton">Restock</button></th>
             </tr>
         </table>
         <form>
             <legend>Add Book</legend>
             <label for="title">Title</label>
-            <input id="title" type="text">
+            <input id="title" type="text" autocomplete="off">
             <br>
             <label for="author">Author</label>
-            <input id="author" type="text">
+            <input id="author" type="text" autocomplete="off">
             <br>
             <label for="isbn">ISBN</label>
-            <input id="isbn" type="text">
+            <input id="isbn" type="text" autocomplete="off">
             <br>
             <label for="numCopies">Copies</label>
-            <input id="numCopies" type="text">
+            <input id="numCopies" type="text" autocomplete="off">
             <br>
             <button id="registerButton" type="submit">Register</button>
         </form>

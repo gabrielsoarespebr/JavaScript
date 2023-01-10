@@ -5,14 +5,16 @@ const books = [];
 // Register book event listener
 const registerButton = document.querySelector("#registerButton");
 
-registerButton.addEventListener("click",function(e){
+registerButton.addEventListener("click", function (e) {
     e.preventDefault();
     registerBook();
 }
 );
 
-let contaClicks = 0;
+// Identifier
+let countClicks = 0;
 
+// Register book function
 function registerBook() {
     const title = document.querySelector("#title").value;
     const author = document.querySelector("#author").value;
@@ -24,19 +26,24 @@ function registerBook() {
     books.push(newBook);
 
     const content = `<tr>
-    <td id="title${contaClicks}">${newBook.title}</td>
-    <td id="author${contaClicks}">${newBook.author}</td>
-    <td id="isbn${contaClicks}">${newBook.isbn}</td>
-    <td id="numCopies${contaClicks}">${newBook.numCopies}</td>
+    <td id="title${countClicks}">${newBook.title}</td>
+    <td id="author${countClicks}">${newBook.author}</td>
+    <td id="isbn${countClicks}">${newBook.isbn}</td>
+    <td id="numCopies${countClicks}">${newBook.numCopies}</td>
 
-    <td class="tdCenter"><input class="buttonChangeNumCopies" type="number"><button onclick="${sell(contaClicks)}" id="sellButton${contaClicks}">Sell</button></td>
+    <td class="tdCenter">
+    <input id="sellInput${countClicks}" class="sellInput" type="number" min="0">
+    </td>
 
-    <td class="tdCenter"><input class="buttonChangeNumCopies" type="number"><button id="restockButton${contaClicks}">Restock</button></td>
+    <td class="tdCenter">
+    <input id="restockInput${countClicks}" class="restockInput" type="number" min="0">
+    </td>
+
     </tr>`
 
     document.querySelector("table").innerHTML += content;
 
-    document.querySelectorAll(".buttonChangeNumCopies").forEach(e => {
+    document.querySelectorAll("td input").forEach(e => {
         e.style.cssText = "width: 30px";
     });
 
@@ -44,10 +51,14 @@ function registerBook() {
         e.style.cssText = "text-align: center";
     });
 
-    contaClicks++;
+    countClicks++;
 }
 
+// Why this doesn't work after Register Button is pressed?
+const sellButton = document.querySelector("#sellButton");
 
-function sell(number) {
-    console.log("funcao sell", books[number].numCopies);
-}
+sellButton.addEventListener("click", function () {
+
+    console.log("Test");
+
+})
