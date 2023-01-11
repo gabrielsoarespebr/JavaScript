@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Geostar+Fill&display=swap');
+
+body {
+    background-color: #F3F2EF;
+    font-family: Arial;
+}
+
+main {
+    display: flex;
+}
+
+h1 {
+    color: #0a66c2;
+    text-align: center
+}
+
+h2,
+h3 {
+    text-align: center
+}
+
+#clock{
+    width: 60%;
+    margin: 5% auto;
+    padding: 2%;
+
+    border: 30px solid gray;
+
+    background-color: black;
+    color: red;
+
+    font-family: 'Geostar Fill', cursive;
+    font-size: 3em;
+
+    text-align: center;
+}
