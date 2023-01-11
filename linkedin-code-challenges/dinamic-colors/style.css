@@ -1,0 +1,19 @@
+body {
+    background-color: #F3F2EF;
+    font-family: Arial;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: #0a66c2;
+    text-align: center
+}
+
+h2,
+h3 {
+    text-align: center
+}
