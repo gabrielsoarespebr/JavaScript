@@ -1,0 +1,52 @@
+body {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+
+    font-size: 3em;
+}
+
+.guessForm {
+    text-align: center;
+    line-height: 2em;
+}
+
+#guessNumber {
+    font-size: 1em;
+}
+
+#guessButton {
+    font-size: .6em;
+    color: white;
+    background-color: rgb(89, 130, 250);
+
+    padding: .5em;
+
+    border-radius: 1em;
+    border: none;
+
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+#guessButton:hover {
+    background-color: rgb(119, 152, 252);
+}
+
+#restart {
+    font-size: .6em;
+    color: gray;
+
+    padding: .5em;
+
+    border-radius: 1em;
+    border: none;
+
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+#restart:hover {
+    background-color: rgb(227, 227, 227);
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Adivinha</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./adivinha.js" defer></script>
+</head>
+
+<body>
+    <form action="" class="guessForm">
+        <label for="guessNumber">Estou pensando em um número de 1 a 10.<br>Adivinhe:</label>
+        <input type="number" name="number" id="guessNumber" size="3" min="1" max="10">
+        <div class="buttons">
+            <button id="guessButton">Adivinhar</button>
+            <button id="restart">Reiniciar</button>
+        </div>
+        <div id="feedback"></div>
+    </form>
+
+</body>
+
+</html>
